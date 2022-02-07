@@ -77,7 +77,7 @@ function ctrlDraw(actor) {
 
         drawTextCenter("Twitter @viniciuscg", wh - 30, 18, "brown");
 
-        if (keyIsDown(32)) {
+        if (keyIsDown(90)) {
             gameStart();
         }
     }
@@ -164,7 +164,7 @@ function shipUpdate(actor) {
         soundEngine();
     }
 
-    if (keyIsDown(32)) {
+    if (keyIsDown(90)) {
         if (canFire <= 0) {
             if (!mng.tagCount(TAG_FIRE) < 3) {
                 makeShot(actor.x, actor.y, actor.rotationAngle);
